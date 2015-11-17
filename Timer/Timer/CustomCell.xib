@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="KGk-i7-Jjw" customClass="CustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="108.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2F-bQ-wle">
+                        <rect key="frame" x="228" y="13" width="100" height="82.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今日未刷新" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTh-Qd-5rl">
+                                <rect key="frame" x="0.0" y="61" width="100" height="16"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="u33.png" translatesAutoresizingMaskIntoConstraints="NO" id="xZG-rp-uYb">
+                                <rect key="frame" x="32.5" y="5" width="35" height="35"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ExI-21-5bV"/>
+                                    <constraint firstAttribute="width" constant="35" id="PkA-KW-jwu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.58039215690000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xZG-rp-uYb" firstAttribute="top" secondItem="d2F-bQ-wle" secondAttribute="top" constant="5" id="1VZ-QL-CgU"/>
+                            <constraint firstItem="xZG-rp-uYb" firstAttribute="centerX" secondItem="d2F-bQ-wle" secondAttribute="centerX" id="IWt-N7-fDt"/>
+                            <constraint firstAttribute="trailing" secondItem="LTh-Qd-5rl" secondAttribute="trailing" id="Mz5-ol-Itq"/>
+                            <constraint firstAttribute="width" constant="100" id="Oca-qT-1j7"/>
+                            <constraint firstAttribute="bottom" secondItem="LTh-Qd-5rl" secondAttribute="bottom" constant="5" id="UH6-4c-1Sd"/>
+                            <constraint firstItem="LTh-Qd-5rl" firstAttribute="leading" secondItem="d2F-bQ-wle" secondAttribute="leading" id="oId-pV-7Wh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击右侧刷新时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-xo-mAB">
+                        <rect key="frame" x="26" y="44" width="136" height="20.5"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="d2F-bQ-wle" secondAttribute="bottom" constant="13" id="S6l-jx-VVQ"/>
+                    <constraint firstItem="d2F-bQ-wle" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="nQL-4O-hJp"/>
+                    <constraint firstItem="BhO-xo-mAB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ndL-wy-goK"/>
+                    <constraint firstAttribute="trailing" secondItem="d2F-bQ-wle" secondAttribute="trailing" constant="20" id="rgg-o0-eFS"/>
+                    <constraint firstItem="BhO-xo-mAB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="xQG-Xt-6Iq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="refreshView" destination="d2F-bQ-wle" id="tS4-O3-DmT"/>
+                <outlet property="timerLabel" destination="LTh-Qd-5rl" id="kGO-pG-eWr"/>
+            </connections>
+            <point key="canvasLocation" x="351" y="439.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="u33.png" width="51" height="52"/>
+    </resources>
+</document>
