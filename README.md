@@ -1,7 +1,7 @@
 # ZFTimer
 每个cell记录一条距离上次刷新的时间
 ### 效果演示：
-![image](https://github.com/renzifeng/ZFTabBar/raw/master/ZFTimer.gif)
+![image](https://github.com/renzifeng/ZFTimer/raw/master/ZFTimer.gif)
 
 定义一个NSTimer，每秒钟[self.tableView reloadData];
 
